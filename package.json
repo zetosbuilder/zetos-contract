@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.2",
+    "pancake-v2-contracts": "^1.0.0"
+  }
+}
