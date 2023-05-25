@@ -49,7 +49,9 @@ contract Operator is Context, Ownable {
     }
 }
 
-/// ZES token
+/// ZEC token
+/// Zetos Cash uses an "algorithmic central bank" that manages the token supply according to predetermined logic. 
+/// The algorithm is responsible for balancing the supply and fluctuating demand of stablecoins, ensuring that token prices remain relatively stable. 
 contract ZecToken is ERC20Burnable, Operator {
     constructor() ERC20('Zetos Cash', 'ZEC') {
         _mint(msg.sender, 1 * 10**18);

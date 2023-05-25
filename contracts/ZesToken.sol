@@ -50,6 +50,7 @@ contract Operator is Context, Ownable {
 }
 
 /// ZES token
+/// No mint function, fixed issuance of 100,000
 contract ZesToken is ERC20, Operator {
     constructor() ERC20('Zetos Share', 'ZES') {
         _mint(msg.sender, 100000 * 10**18);
